@@ -11,7 +11,7 @@
 9. getting response for the message 
 10. import pprint 
 
-'''python
+```python
 from ollama import chat
 from pprint import pprint
 
