@@ -4,8 +4,12 @@ from pprint import pprint
 
 messages = [
     {
+        "role": "system",
+        "content": "you are a cricket expert and reply should be less than 15 word"
+    },
+    {
         "role": "user",
-        "content": "What is AI?"
+        "content": "What is the best shot to play when a bouncer is coming?"
     }
 ]
 

@@ -1,0 +1,12 @@
+<xml>
+<rolelist>
+    <role> Admin </role>
+    <description> user can do everything </description>
+    <role> QA</role>
+     <description>Test the app </description>
+    <role> Developer</role>
+     <description>make development</description>
+    <role> Ops Team </role>
+     <description>Make changes once the app is live</description>
+</rolelist>
+</xml>

@@ -1,0 +1,18 @@
+[
+    {
+        "role": "Admin",
+        "description": "user can do everything"
+    },
+    {
+        "role": "QA",
+        "description": "Test the app"
+    },
+    {
+        "role": "Developer",
+        "description": "make development"
+    },
+    {
+        "role": "Ops Team",
+        "description": "Make changes once the app is live"
+    }
+]

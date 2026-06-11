@@ -1,0 +1,5 @@
+role,description
+admin, user can do everything
+QA, Test the app 
+Developer , make development
+Ops Team , Make changes once the app is live
