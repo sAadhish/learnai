@@ -30,3 +30,26 @@ response = chat(
 print(response.message.content)
 pprint(response.model_dump())
 '''
+
+
+
+
+# commands 
+
+
+
+  source "/Users/aadhishs/gen ai masterclass/venv/bin/activate"
+  "/Users/aadhishs/gen ai masterclass/venv/bin/python"
+  ollama --version
+  /bye
+  python
+  cls
+  ollama list
+  llama3.2:latest
+  ollama run llama3.2:latest6  curl -fsSL https://ollama.com/install.sh | sh
+  ollama run llama3.1
+  ollama run llama3.1
+  llama3.2:latest
+  ollama list
+  ollama list
+  $history
