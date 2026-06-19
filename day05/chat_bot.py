@@ -1,11 +1,14 @@
 import gradio as gr
 import ollama
+from pprint import pprint
 
 def predict(message, history):
     # 1. Format the history into the structure Ollama expects
     # Gradio history is [[user, bot], [user, bot]]
     messages = []
     for item in history:
+        pprint(item)
+    
         role = item["role"]
         content_blocks = item.get("content", [])
         if content_blocks and isinstance(content_blocks, list):
@@ -25,7 +28,8 @@ def predict(message, history):
     # 3. Stream from Ollama
     # Ensure the model name matches what you pulled (e.g., 'llama3.2:3b')
     stream = ollama.chat(
-        model='llama3.2',
+       # model='llama3.2',
+       model='learnlessdaily/learnlessdaily-chatbot:latest',
         messages=messages,
         stream=True
     )
@@ -41,8 +45,11 @@ def predict(message, history):
 demo = gr.ChatInterface(
     fn=predict,
     title="Aadhish ChatBot",
-    description="Chatting locally with Llama 3.2 via Ollama."
+    description="Chatting locally with Llama 3.2 via Ollama.",
+    
 )
 
-demo.launch()
+demo.launch(
+    share=True
+)
 
